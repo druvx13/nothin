@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 India-Pakistan Crisis: Comprehensive Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #111827;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #1d4ed8;
+            border: 4px solid #93c5fd;
+        }
+        
+        .timeline-line {
+            position: absolute;
+            left: -29px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #93c5fd;
+        }
+        
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        .casualty-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .casualty-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+            font-weight: 500;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #1d4ed8;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .active-nav:after {
+            width: 100%;
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #1d4ed8;
+            color: white;
+            font-size: 1.25rem;
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .flag-icon {
+            width: 24px;
+            height: 16px;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+
+        .footer-link {
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: white;
+        }
+
+        .subscribe-input {
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: background-color 0.2s ease;
+        }
+
+        .subscribe-input:focus {
+            background-color: rgba(255, 255, 255, 0.15);
+            outline: none;
+        }
+
+        .social-icon {
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-2px);
+            color: white;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-globe-asia text-blue-700 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">Indo-Pak Crisis 2025</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#historical" class="nav-link text-gray-700 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Historical Context</a>
+                    <a href="#international" class="nav-link text-gray-700 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">International Response</a>
+                    <a href="#economic" class="nav-link text-gray-700 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Economic Impact</a>
+                    <a href="#military" class="nav-link text-gray-700 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Military Analysis</a>
+                    <a href="#timeline" class="nav-link text-gray-700 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Timeline</a>
+                    <a href="#conclusion" class="nav-link text-gray-700 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Conclusion</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="#historical" class="block pl-3 pr-4 py-2 border-l-4 border-blue-500 text-base font-medium text-blue-700 bg-blue-50">Historical Context</a>
+                <a href="#international" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800">International Response</a>
+                <a href="#economic" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800">Economic Impact</a>
+                <a href="#military" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800">Military Analysis</a>
+                <a href="#timeline" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800">Timeline</a>
+                <a href="#conclusion" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800">Conclusion</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">2025 India-Pakistan Crisis</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">A Comprehensive Analysis of the Escalating Tensions Between Two Nuclear-Armed Neighbors</p>
+                <div class="mt-8">
+                    <a href="#historical" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-700 bg-white hover:bg-gray-50 transition duration-300 transform hover:-translate-y-1">
+                        Explore Analysis <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Historical Context Section -->
+        <section id="historical" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="section-icon">
+                    <i class="fas fa-history"></i>
+                </div>
+                <h2 class="ml-4 text-3xl font-bold ">Historical Context and Escalation of Tensions</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="India-Pakistan border" class="rounded-lg shadow-lg w-full h-auto object-cover" loading="lazy">
+                    <p class="text-sm text-gray-500 mt-2">The Wagah border crossing between India and Pakistan, a symbol of their complex relationship</p>
+                </div>
+                <div>
+                    <p class="text-lg mb-4 text-gray-700">The historical trajectory of India-Pakistan relations has been marked by persistent volatility, with recurring cycles of conflict rooted in territorial disputes, particularly over Kashmir. Since their partition in 1947, the two nuclear-armed neighbors have engaged in multiple wars and skirmishes, each exacerbating the underlying mistrust and animosity.</p>
+                    <p class="text-lg mb-4 text-gray-700">Post-2020, this fraught relationship witnessed several critical flashpoints that set the stage for the dramatic escalation in 2025. Among these, the Pahalgam attack on April 22, 2025, emerged as a pivotal event, triggering a chain reaction of retaliatory measures and international diplomatic interventions.</p>
+                    <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-700">
+                        <p class="font-medium text-blue-800">"The world cannot afford a military confrontation between India and Pakistan."</p>
+                        <p class="text-blue-600">— UN Secretary-General António Guterres, May 6, 2025</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">The Pahalgam Attack: Catalyst for Crisis</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="mb-4 text-gray-700">On April 22, 2025, a terrorist attack in Pahalgam, Indian-administered Kashmir, claimed the lives of 26 civilians, including 25 Hindu tourists, a Christian tourist, and a local Muslim resident. The Resistance Front (TRF), an insurgent group allegedly linked to the Pakistan-based Lashkar-e-Taiba (LeT), initially claimed responsibility but later retracted its statement.</p>
+                        <p class="text-gray-700">This ambiguity fueled India's accusations against Pakistan, asserting that Islamabad was complicit in sponsoring cross-border terrorism—a charge vehemently denied by Pakistan. The attack not only deepened the humanitarian crisis in the region but also reignited longstanding grievances between the two nations.</p>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1580130732473-afd7a4f8a35f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Kashmir landscape" class="rounded-lg w-full h-auto object-cover" loading="lazy">
+                        <p class="text-sm text-gray-500 mt-2">Pahalgam, a popular tourist destination in Kashmir, became the site of the attack that triggered the 2025 crisis</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">India's Retaliatory Measures</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg card-shadow border-t-4 border-blue-600 hover:border-blue-700 transition-colors duration-300">
+                        <div class="text-blue-600 mb-3">
+                            <i class="fas fa-water text-3xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Suspension of Indus Waters Treaty</h4>
+                        <p class="text-gray-700">India suspended the 1960 agreement governing river resource sharing, prompting Pakistan to warn this would be considered an "Act of War".</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow border-t-4 border-red-600 hover:border-red-700 transition-colors duration-300">
+                        <div class="text-red-600 mb-3">
+                            <i class="fas fa-passport text-3xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Diplomatic Expulsions</h4>
+                        <p class="text-gray-700">India revoked visas for Pakistani diplomats and expelled several officials, significantly reducing diplomatic channels for communication.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow border-t-4 border-yellow-600 hover:border-yellow-700 transition-colors duration-300">
+                        <div class="text-yellow-600 mb-3">
+                            <i class="fas fa-plane text-3xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Airspace Restrictions</h4>
+                        <p class="text-gray-700">India closed 27 airports near the border and imposed airspace restrictions, disrupting civilian flights and trade routes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- International Response Section -->
+        <section id="international" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="section-icon">
+                    <i class="fas fa-globe-europe"></i>
+                </div>
+                <h2 class="ml-4 text-3xl font-bold">International Interventions and Diplomatic Efforts</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1587336921166-63ef19a2c0a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="United Nations General Assembly" class="rounded-lg shadow-lg w-full h-auto object-cover" loading="lazy">
+                    <p class="text-sm text-gray-500 mt-2">The United Nations played a crucial role in mediating the crisis</p>
+                </div>
+                <div>
+                    <p class="text-lg mb-4 text-gray-700">The year 2025 marked a significant escalation in tensions between India and Pakistan, prompting an array of international interventions and diplomatic efforts aimed at averting a potential catastrophe. At the forefront of these efforts was UN Secretary-General António Guterres, whose repeated appeals for restraint underscored the gravity of the situation.</p>
+                    <p class="text-lg mb-4 text-gray-700">His statements, issued on May 6 and reinforced through subsequent briefings, highlighted the catastrophic implications of a military confrontation between two nuclear-armed states. By emphasizing that "the world cannot afford a military confrontation," Guterres not only drew global attention to the crisis but also reiterated the indispensable role of multilateral institutions like the United Nations in mediating high-stakes conflicts.</p>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 p-6 rounded-lg shadow-sm mb-8">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">UN Security Council Consultations</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="mb-4 text-gray-700">On May 5, 2025, the UN Security Council convened closed consultations under the agenda item "The India-Pakistan Question," marking the first formal discussion since the crisis began. During these deliberations, Assistant Secretary-General Mohamed Khaled Khiari briefed members on behalf of the Department of Political and Peacebuilding Affairs (DPPA) and the Department of Peace Operations (DPO).</p>
+                        <p class="text-gray-700">While Council members unanimously condemned the April 22 terror attack in Pahalgam, which resulted in 26 civilian deaths, disagreements arose over references to the Resistance Front (TRF) and the labeling of Jammu and Kashmir as a "disputed territory". Pakistan, supported by China, sought to include language describing the region as disputed, a proposal met with resistance from other members.</p>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="UN Security Council" class="rounded-lg w-full h-auto object-cover" loading="lazy">
+                        <p class="text-sm text-gray-500 mt-2">The UN Security Council chamber where critical discussions about the crisis took place</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Global Reactions and Mediation Efforts</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA flag" class="flag-icon mr-2">
+                            <h4 class="font-bold">United States</h4>
+                        </div>
+                        <p class="text-gray-700">Played a pivotal role in brokering the May 10 ceasefire, with President Trump claiming credit for leading negotiations via social media.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" alt="China flag" class="flag-icon mr-2">
+                            <h4 class="font-bold">China</h4>
+                        </div>
+                        <p class="text-gray-700">Adopted a cautious stance, urging restraint while condemning India's actions as destabilizing to regional stability.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg" alt="Israel flag" class="flag-icon mr-2">
+                            <h4 class="font-bold">Israel</h4>
+                        </div>
+                        <p class="text-gray-700">Expressed unequivocal support for India's right to self-defense against cross-border terrorism.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Ceasefire Negotiations</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-700">Conflicting reports emerged regarding the mediation of the May 10 ceasefire. While President Trump claimed sole responsibility for the agreement, Pakistani officials credited a broader coalition of nations, including Saudi Arabia, Iran, Turkey, Qatar, the UK, and China, for their contributions.</p>
+                        <p class="mt-4 text-gray-700">This discrepancy underscores the multifaceted nature of international mediation in South Asia, where no single actor holds exclusive influence. Furthermore, US Secretary of State Marco Rubio's mention of plans for broader talks at a neutral venue contradicted India's official stance, revealing underlying tensions in the diplomatic process.</p>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Diplomatic meeting" class="rounded-lg w-full h-auto object-cover" loading="lazy">
+                        <p class="text-sm text-gray-500 mt-2">Intense diplomatic negotiations were required to broker the ceasefire</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Economic Impact Section -->
+        <section id="economic" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="section-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h2 class="ml-4 text-3xl font-bold">Economic Sanctions and Trade Disruptions</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1601584115197-04e5a5ab83a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Closed border crossing" class="rounded-lg shadow-lg w-full h-auto object-cover" loading="lazy">
+                    <p class="text-sm text-gray-500 mt-2">The Wagah-Attari border crossing was closed during the crisis, disrupting formal trade</p>
+                </div>
+                <div>
+                    <p class="text-lg mb-4 text-gray-700">The economic relationship between India and Pakistan has long been a complex interplay of geopolitical tensions, historical grievances, and mutual dependencies. However, recent escalations in hostilities have brought economic sanctions and trade disruptions to the forefront, amplifying diplomatic tensions while exposing vulnerabilities within both economies.</p>
+                    <p class="text-lg mb-4 text-gray-700">One of the most significant developments was India's decision to suspend the 1960 Indus Waters Treaty following the April 22, 2025, Pahalgam attack. The treaty, which allocates approximately 80% of the shared river flows to Pakistan, is critical for sustaining its agricultural sector—a backbone of the Pakistani economy.</p>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 p-6 rounded-lg shadow-sm mb-8">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">The Indus Waters Treaty Crisis</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="mb-4 text-gray-700">By threatening to restrict water flow under the treaty, India effectively weaponized a vital natural resource, prompting warnings from Pakistan that such actions would constitute an "Act of War". This move underscores how resource-sharing agreements can become flashpoints in bilateral conflicts when linked to accusations of terrorism or other provocations.</p>
+                        <p class="text-gray-700">For Pakistan, the suspension poses existential risks to its agriculture-dependent communities, particularly those reliant on irrigation systems fed by the Indus River system. Experts argue that these measures could deepen mistrust, making future negotiations more contentious and heightening the risk of military escalation over shared resources.</p>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1605164797530-9a8a0a5e5a5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Indus River" class="rounded-lg w-full h-auto object-cover" loading="lazy">
+                        <p class="text-sm text-gray-500 mt-2">The Indus River system is vital for agriculture in both countries</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Trade Disruptions and Informal Commerce</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="bg-white p-6 rounded-lg card-shadow">
+                            <h4 class="font-bold text-lg mb-3">Formal Trade Collapse</h4>
+                            <p class="mb-4 text-gray-700">India and Pakistan suspended cross-border trade through formal channels like the Wagah-Attari border crossing—their primary land-based trade link. Official trade figures reveal minimal exchange even before the current crisis:</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-blue-50 p-3 rounded">
+                                    <p class="text-sm text-blue-700">Indian exports to Pakistan</p>
+                                    <p class="font-bold text-xl">$447.7M</p>
+                                    <p class="text-xs text-gray-500">April 2024-Jan 2025</p>
+                                </div>
+                                <div class="bg-blue-50 p-3 rounded">
+                                    <p class="text-sm text-blue-700">Pakistani exports to India</p>
+                                    <p class="font-bold text-xl">$420K</p>
+                                    <p class="text-xs text-gray-500">April 2024-Jan 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-white p-6 rounded-lg card-shadow">
+                            <h4 class="font-bold text-lg mb-3">Thriving Informal Trade</h4>
+                            <p class="mb-4 text-gray-700">Despite these low official numbers, unofficial trade routed via third countries such as Dubai, Singapore, and Colombo has thrived, with estimates suggesting an annual value of:</p>
+                            <div class="bg-yellow-50 p-4 rounded border-l-4 border-yellow-500">
+                                <p class="text-yellow-800 font-bold text-2xl">$10 Billion</p>
+                                <p class="text-sm text-yellow-700">Annual value of informal India-Pakistan trade</p>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-700">This "grey-zone" commerce involves relabeling goods to mask their origin, allowing traders to circumvent restrictions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Sectoral Impacts</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-4 rounded card-shadow">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-pills text-blue-600 mr-2"></i>
+                            <h4 class="font-bold">Healthcare</h4>
+                        </div>
+                        <p class="text-sm text-gray-700">Pakistan's healthcare sector faces challenges due to reliance on Indian pharmaceutical imports, with potential declines in affordable medicines.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded card-shadow">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-truck text-blue-600 mr-2"></i>
+                            <h4 class="font-bold">Transportation</h4>
+                        </div>
+                        <p class="text-sm text-gray-700">The Wagah-Attari closure increases costs for Afghanistan's exports reliant on this route, affecting regional trade networks.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded card-shadow">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-store text-blue-600 mr-2"></i>
+                            <h4 class="font-bold">Local Businesses</h4>
+                        </div>
+                        <p class="text-sm text-gray-700">Businesses catering to cross-border traffic experience reduced footfall and revenue losses, impacting border communities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Military Analysis Section -->
+        <section id="military" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="section-icon">
+                    <i class="fas fa-fighter-jet"></i>
+                </div>
+                <h2 class="ml-4 text-3xl font-bold">Military Engagements and Skirmishes</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1518562180175-0f4bfb1228ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Military aircraft" class="rounded-lg shadow-lg w-full h-auto object-cover" loading="lazy">
+                    <p class="text-sm text-gray-500 mt-2">Advanced military hardware was deployed by both sides during the conflict</p>
+                </div>
+                <div>
+                    <p class="text-lg mb-4 text-gray-700">The year 2025 marked a significant escalation in hostilities between India and Pakistan, with military engagements along the Line of Control (LoC) reaching unprecedented levels of intensity. The conflict began on April 23, 2025, following a terrorist attack in Pahalgam, Jammu and Kashmir, which claimed the lives of 27 individuals.</p>
+                    <p class="text-lg mb-4 text-gray-700">This incident triggered a series of retaliatory actions by India, including the suspension of the Indus Waters Treaty, visa cancellations, expulsion of diplomats, and closure of airspace and borders. These measures set the stage for cross-border skirmishes that would define the ensuing weeks.</p>
+                </div>
+            </div>
+            
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Key Military Operations</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg card-shadow border-t-4 border-blue-600">
+                        <h4 class="font-bold text-lg mb-2">Operation Sindoor (India)</h4>
+                        <p class="mb-3 text-gray-700"><strong>Date:</strong> May 7, 2025</p>
+                        <p class="mb-3 text-gray-700"><strong>Targets:</strong> Nine locations across Pakistani-administered Kashmir and Punjab province</p>
+                        <p class="mb-3 text-gray-700"><strong>Weapons Used:</strong> Rafale aircraft with SCALP missiles, BrahMos cruise missiles, Israeli Harop loitering munitions</p>
+                        <p class="text-gray-700"><strong>Claimed Results:</strong> Approximately 100 militants killed, including high-profile figures like Abdul Rauf Azhar</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow border-t-4 border-green-600">
+                        <h4 class="font-bold text-lg mb-2">Operation Bunyan al-Marsus (Pakistan)</h4>
+                        <p class="mb-3 text-gray-700"><strong>Date:</strong> May 10, 2025</p>
+                        <p class="mb-3 text-gray-700"><strong>Targets:</strong> Multiple Indian airbases near Nur Khan, Shorkot, and Murid</p>
+                        <p class="mb-3 text-gray-700"><strong>Weapons Used:</strong> Drones, missiles</p>
+                        <p class="text-gray-700"><strong>Claimed Results:</strong> Significant damage to Indian airbases, marking first use of drones in combat between nuclear powers</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 p-6 rounded-lg shadow-sm mb-8">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Casualty Reports</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="casualty-card bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-4">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="India flag" class="flag-icon mr-2">
+                            <h4 class="font-bold text-lg">Indian Claims</h4>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-blue-50 p-3 rounded">
+                                <p class="text-sm text-blue-700">Military Personnel</p>
+                                <p class="font-bold text-xl">5</p>
+                                <p class="text-xs text-gray-500">Killed</p>
+                            </div>
+                            <div class="bg-blue-50 p-3 rounded">
+                                <p class="text-sm text-blue-700">Civilians</p>
+                                <p class="font-bold text-xl">21</p>
+                                <p class="text-xs text-gray-500">Killed</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-700">India accused Pakistan of targeting non-military sites like schools and mosques.</p>
+                    </div>
+                    <div class="casualty-card bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" alt="Pakistan flag" class="flag-icon mr-2">
+                            <h4 class="font-bold text-lg">Pakistani Claims</h4>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-green-50 p-3 rounded">
+                                <p class="text-sm text-green-700">Military Personnel</p>
+                                <p class="font-bold text-xl">11</p>
+                                <p class="text-xs text-gray-500">Killed</p>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded">
+                                <p class="text-sm text-green-700">Civilians</p>
+                                <p class="font-bold text-xl">40</p>
+                                <p class="text-xs text-gray-500">Killed</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-700">Pakistan accused India of conducting strikes on civilian areas, including mosques.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Technological Milestones</h3>
+                <div class="bg-white p-6 rounded-lg card-shadow">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-drone-alt text-blue-700 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">First Drone Warfare Between Nuclear Powers</h4>
+                            <p class="text-gray-700">The use of drones in combat during these operations represented a historic milestone, marking the first instance of drone warfare between two nuclear-armed nations. This technological advancement underscored the evolving nature of modern warfare and heightened concerns about potential escalations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Ceasefire and Aftermath</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-700">The ceasefire agreement announced on May 10, 2025, was brokered through intense diplomatic efforts led by the United States, Saudi Arabia, Iran, Turkey, Qatar, the UK, and China. Notably, U.S. Secretary of State Marco Rubio and Vice President JD Vance played pivotal roles in mediating the truce.</p>
+                        <p class="mt-4 text-gray-700">Despite initial violations reported by both parties, calm eventually prevailed, underscoring the critical role of international mediation in averting catastrophic outcomes. However, expert perspectives on the tactical gains versus strategic importance of these military engagements remain divided.</p>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1518562180175-0f4bfb1228ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Military aircraft" class="rounded-lg w-full h-auto object-cover" loading="lazy">
+                        <p class="text-sm text-gray-500 mt-2">Advanced military hardware was deployed by both sides during the conflict</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="section-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h2 class="ml-4 text-3xl font-bold">Timeline of Key Events</h2>
+            </div>
+            
+            <div class="relative">
+                <div class="timeline-line"></div>
+                
+                <div class="mb-8 pl-10 relative timeline-item">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">April 22, 2025</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Trigger Event</span>
+                        </div>
+                        <p class="text-gray-700">Terror attack in Pahalgam, Jammu & Kashmir kills 26 civilians. The Resistance Front (TRF) initially claims responsibility but later denies involvement.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-8 pl-10 relative timeline-item">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">April 23 - May 5, 2025</h3>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Retaliatory Measures</span>
+                        </div>
+                        <p class="text-gray-700">India suspends Indus Waters Treaty, closes Attari border, revokes visas for Pakistani diplomats, and imposes airspace restrictions.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-8 pl-10 relative timeline-item">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">May 5, 2025</h3>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">UN Involvement</span>
+                        </div>
+                        <p class="text-gray-700">UN Security Council holds closed consultations on "The India-Pakistan Question," marking first formal discussion since crisis began.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-8 pl-10 relative timeline-item">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">May 6, 2025</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Diplomatic Appeal</span>
+                        </div>
+                        <p class="text-gray-700">UN Secretary-General António Guterres urges restraint, stating "the world cannot afford a military confrontation between India and Pakistan."</p>
+                    </div>
+                </div>
+                
+                <div class="mb-8 pl-10 relative timeline-item">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">May 7, 2025</h3>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Military Operation</span>
+                        </div>
+                        <p class="text-gray-700">India launches Operation Sindoor, targeting militant sites in Pakistan with advanced weaponry including Rafale aircraft and BrahMos missiles.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-8 pl-10 relative timeline-item">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">May 10, 2025</h3>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Ceasefire</span>
+                        </div>
+                        <p class="text-gray-700">Ceasefire agreement announced after intense international mediation involving US, Saudi Arabia, Iran, Turkey, Qatar, UK, and China.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Geographical Context</h3>
+                <div class="bg-white p-4 rounded-lg card-shadow">
+                    <div class="map-container">
+                        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7190672.193110302!2d68.14226488437499!3d31.50319850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964aa569e7355%3A0x8fbd263103a38861!2sKashmir!5e0!3m2!1sen!2sus!4v1689875431632!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Map showing the Kashmir region at the heart of the India-Pakistan conflict</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section id="conclusion" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="section-icon">
+                    <i class="fas fa-flag"></i>
+                </div>
+                <h2 class="ml-4 text-3xl font-bold">Conclusion and Path Forward</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1508784411315-9c1cd83cdfd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Peace dove" class="rounded-lg shadow-lg w-full h-auto object-cover" loading="lazy">
+                    <p class="text-sm text-gray-500 mt-2">Symbol of peace and hope for future reconciliation</p>
+                </div>
+                <div>
+                    <p class="text-lg mb-4 text-gray-700">The 2025 India-Pakistan crisis serves as a stark reminder of the complex interplay between historical grievances, geopolitical maneuvering, and military brinkmanship that defines relations between the two nuclear-armed neighbors. The sequence of events, beginning with the Pahalgam attack on April 22, 2025, and culminating in the May 10 ceasefire, underscores the fragility of Indo-Pak relations and the potential for localized violence to escalate into broader conflict with severe regional and global implications.</p>
+                    <p class="text-lg mb-4 text-gray-700">While the ceasefire offers a temporary reprieve, unresolved issues such as the suspension of the Indus Waters Treaty, allegations of cross-border terrorism, and the contentious Kashmir dispute remain potent flashpoints that could reignite tensions.</p>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 p-6 rounded-lg shadow-sm mb-8">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Key Lessons and Recommendations</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-handshake text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Strengthening Diplomatic Channels</h4>
+                                <p class="text-sm text-gray-700">Establish permanent backchannel communications to prevent misunderstandings and enable rapid de-escalation during crises.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-tint text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Resource Sharing Agreements</h4>
+                                <p class="text-sm text-gray-700">Revitalize the Indus Waters Treaty with independent monitoring mechanisms to depoliticize water resource management.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-users text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">People-to-People Contacts</h4>
+                                <p class="text-sm text-gray-700">Expand cultural exchanges, trade delegations, and academic collaborations to build grassroots support for peace.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-shield-alt text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Nuclear Risk Reduction</h4>
+                                <p class="text-sm text-gray-700">Implement bilateral agreements on no-first-use policies and advance notification of missile tests to enhance strategic stability.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-newspaper text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Media Responsibility</h4>
+                                <p class="text-sm text-gray-700">Create joint media councils to combat misinformation and promote responsible reporting during tensions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-globe-asia text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">International Engagement</h4>
+                                <p class="text-sm text-gray-700">Leverage multilateral forums like SAARC and SCO for confidence-building measures while respecting bilateral nature of core disputes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-xl mb-6 text-gray-700">The international community's intervention, particularly through the United Nations and key global powers like the United States, Saudi Arabia, and China, played a crucial role in averting large-scale violence. However, the absence of a clear consensus on fundamental issues like Kashmir and water-sharing highlights the limitations of current diplomatic frameworks and underscores the need for innovative approaches to foster dialogue and build trust between India and Pakistan.</p>
+                    <p class="text-xl text-gray-700">Future research should explore the intersection of environmental and geopolitical tensions, particularly regarding shared water resources, as these issues will likely become increasingly salient in the context of climate change. Such insights could inform more effective strategies for preventing future crises and promoting long-term peace in South Asia.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-lg font-semibold mb-4 text-white">About This Report</h3>
+                    <p class="text-gray-400 text-sm">This comprehensive analysis examines the 2025 India-Pakistan crisis, its historical roots, international response, economic impacts, and military dimensions.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Key Sections</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#historical" class="footer-link text-gray-400 text-sm">Historical Context</a></li>
+                        <li><a href="#international" class="footer-link text-gray-400 text-sm">International Response</a></li>
+                        <li><a href="#economic" class="footer-link text-gray-400 text-sm">Economic Impact</a></li>
+                        <li><a href="#military" class="footer-link text-gray-400 text-sm">Military Analysis</a></li>
+                        <li><a href="#timeline" class="footer-link text-gray-400 text-sm">Timeline</a></li>
+                        <li><a href="#conclusion" class="footer-link text-gray-400 text-sm">Conclusion</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon text-gray-400">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon text-gray-400">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon text-gray-400">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon text-gray-400">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-4">Subscribe for updates</p>
+                    <div class="mt-2 flex">
+                        <input type="email" placeholder="Your email" class="subscribe-input px-3 py-2 text-white text-sm rounded-l focus:outline-none focus:ring-1 focus:ring-blue-500 w-full">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded-r text-sm">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">© 2025 Geopolitical Analysis Institute. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="footer-link text-gray-400 text-sm">Privacy Policy</a>
+                        <a href="#" class="footer-link text-gray-400 text-sm">Terms of Service</a>
+                        <a href="#" class="footer-link text-gray-400 text-sm">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('block');
+            } else {
+                menu.classList.remove('block');
+                menu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('block');
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                // Scroll to target
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Highlight active navigation link based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active-nav');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active-nav');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
